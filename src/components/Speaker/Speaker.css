@@ -1,0 +1,26 @@
+.speaker-icon {
+  width: 35px;
+  cursor: pointer;
+  height: 35px;
+}
+
+.speaker-icon--2 {
+  -webkit-filter: brightness(0.4);
+  filter: brightness(0.4);
+}
+
+@media (min-width: 768px) {
+  .speaker-icon--2 {
+    display: none;
+  }
+}
+
+.speaker-icon--1 {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .speaker-icon--1 {
+    display: block;
+  }
+}

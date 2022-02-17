@@ -1,0 +1,127 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+  border-style: none;
+}
+
+html,
+body {
+  margin: 0;
+  font-size: 62.5%;
+  min-height: 100%;
+  padding: 0;
+  scroll-behavior: smooth;
+  line-height: 1.6;
+  position: relative;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: subpixel-antialiased;
+  box-sizing: border-box;
+  font-weight: 1rem;
+  font-family: var(--general-font);
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+button,
+select,
+textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+:root {
+  /* Colors */
+  --original-black: #323131;
+  --original-white: #ffffff;
+  --original-disabled: #c9c4c4;
+  --dark-grey: #737a91;
+  --light-grey: #e8e8e8;
+  --dark-red: #cd0000;
+  /* Hover */
+  --troperial-white-hover: #979393;
+
+  /*Font*/
+  --general-font: "GT Walsheim";
+  --normal-font-weight: medium;
+}
+
+.hero {
+  overflow: hidden;
+}
+
+.hero__background {
+  background-image: url("./assets/images/mobile-background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  height: 100vh;
+  background-attachment: fixed;
+}
+
+@media (min-width: 768px) {
+  .hero__background {
+    background-image: url("./assets/images/desktop-background.png");
+  }
+}
+
+.hero__container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .hero__container {
+    max-width: 864px;
+  }
+}
+
+@media (min-width: 992px) {
+  .hero__container {
+    max-width: 1076px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .hero__container {
+    max-width: 1340px;
+  }
+}
+
+@font-face {
+  font-family: "GT Walsheim";
+  src: url("./assets/fonts/gt-walsheim-web.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "GT Walsheim";
+  src: url("./assets/fonts/gt-walsheim-medium-web.ttf") format("truetype");
+  font-weight: medium;
+  font-style: normal;
+}
+@font-face {
+  font-family: "GT Walsheim";
+  src: url("./assets/fonts/gt-walsheim-bold-web.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "GT Walsheim";
+  src: url("./assets/fonts/gt-walsheim-light-web.ttf") format("truetype");
+  font-weight: lighter;
+  font-style: normal;
+}

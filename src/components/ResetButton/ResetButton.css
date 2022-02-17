@@ -1,0 +1,14 @@
+.reset-box {
+  margin-left: auto;
+}
+
+.refresh {
+  width: 35px;
+  cursor: pointer;
+  height: 35px;
+}
+
+.refresh-active {
+  transform: rotate(145deg);
+  transition: transform 0.8s ease-in-out;
+}

@@ -1,0 +1,32 @@
+.navbar__text--h1 {
+  font-weight: 600;
+  font-size: 2.4rem;
+  color: var(--dark-red);
+}
+
+.navbar__text--h2 {
+  font-weight: 300;
+  font-size: 2.4rem;
+  color: var(--dark-red);
+}
+
+.navbar-logo {
+  width: 8.5rem;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .navbar-logo {
+    display: none;
+  }
+}
+
+.navbar__text {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .navbar__text {
+    display: block;
+  }
+}

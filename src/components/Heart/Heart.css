@@ -1,0 +1,31 @@
+.navbar__middle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+@media (min-width: 768px) {
+  .navbar__middle {
+    margin-right: 14.9rem;
+  }
+}
+
+.navbar--avatar {
+  height: 43px;
+  width: 43px;
+  background: var(--dark-red);
+  border-radius: 0.5rem;
+  display: none;
+}
+@media (min-width: 768px) {
+  .navbar--avatar {
+    display: block;
+  }
+}
+
+.heart-icons {
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+}
